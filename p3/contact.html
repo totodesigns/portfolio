@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- HTML 5. Semantic tags also defines html 5. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Defines the set of characters to be used in the code. UTF-8 is the standard. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Defines the window of which the screen consists. It is set to the device screen to keep it responsive. -->
+
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c80e433044.js" crossorigin="anonymous"></script>
+    <!-- Adding Font Awesome Kit for icons -->
+
+    <title>Toto Designs - Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/Logoblack.png" alt="logo" width="48" height="48"></a>
+
+            <!-- ADDING THE CHECKBOX FUNCTION. DEFINING THE BOX AS "CLICK" -->
+            <input type="checkbox" id="click">
+
+            <!-- ADDING THE BAR ICON. LABEL TAG ASSOCIATES THE MENU BAR WITH THE CHECKBOX FUNCTION. CALLING THE "CLICK"-VALUE FOR USE -->
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars fa-2xl"></i>
+            </label>
+
+            <ul>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="work"><a href="work.html">Work</a></li>
+                <li id="about"><a href="about.html">About</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- NAVIGATION COPIED FROM INDEX.HTML -->
+        </nav>
+    </header>
+    <main>
+        <!-- CONTENT HERO -->
+        <div class="banner">                     
+            <h1>Let's get coffee.</h1>
+            <h3>Regardless of your size, branch, or industry, my
+                expertise has helped multiple companies increase their 
+                profit and customers.<br>And I can help you too.</h3>
+        </div>
+
+        <!-- CONTACT INPUT BOXES -->
+        <div class="boxes">
+            <div class="two">
+                <div class="field">
+                    <label for="name">Your Name*</label>
+                    <input type="text" class="box" id="name" placeholder="James Bond...">
+                </div>
+                <div class="field">
+                    <label for="name">Email Address*</label>
+                    <input type="text" class="box" id="mail" placeholder="example@email.com...">
+                </div>
+            </div>
+            <div class="field">
+                <label for="name">Company Name or URL (optional)</label>
+                <input type="text" class="box" id="company" placeholder="Example Studio or https://www.example.com">
+            </div>
+            <div class="field">
+                <label for="name">Company Name or URL (optional)</label>
+                <textarea style="width: 100%" rows="6" placeholder="Our team from ... has had issues with ... lately..."></textarea>
+            </div>
+            <!-- INPUT TAG CREATES A TEXT BOX THAT IS TO BE DEFINED IN THE CSS. -->
+            <a href="submit.html" class="primary">Submit</a>
+        </div>
+
+    </main>
+    <footer>
+        <div class="seller">
+            <a href="index.html"><img src="images/Logowhite.png" alt="logo" width="24" height="24" loading="lazy"></a>
+            <section>
+                <h2>Let's work together</h2>
+                <p>Looking to recruit a great partner? I'd love to work with you.</p>
+            </section>
+            <a href="contact.html" class="light">Contact</a>
+        </div>
+        <div class="connect">
+            <div class="links">
+                <h3>Links.</h3>
+                <div class="footerlinks">
+                    <a href="index.html">Home</a>
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="some">
+                <h3>Find me on:</h3>
+                <div class="somelinks">
+                    <a href="https://www.instagram.com/tonnytn_/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                    <a href="https://www.linkedin.com/in/tonny-nguyen-totodesigns/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    <a href="https://medium.com/@tonny.nguyen" target="_blank"><i class="fa-brands fa-medium fa-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

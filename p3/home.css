@@ -1,0 +1,234 @@
+/* --- MOBILE DEFINTION (ORIGINAL) --- */
+
+/* --- MAIN BLOCKS ---*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+.hero > .image {
+    align-self: center;
+}
+#landing {
+    padding: 0% 15px 40px 16px;
+    text-align: center;
+}
+
+.scrolldown {
+    display: none;
+}
+
+.blockwhite {
+    width: 100%;
+    padding: 40px 15px 40px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-self: stretch;
+}
+.blockwhite > .image {
+    align-self: center;
+}
+.blockwhite > #featured {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.featured {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+}
+.competences {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.byintro > .text > h3, .byintro > .text > p {
+    color: #463924;
+}
+.competences > .text > h3, .competences > .text > p {
+    color: #463924;
+}
+.card {
+    width: 100%;
+    max-width: 324px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+}
+#fwremarkable {
+    background: url(images/remarkable.png) center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    object-fit:cover;
+    height: 360px;
+}
+#fwsomeapp {
+    background: url(images/pwsintro.jpg) left;
+    background-size:cover;
+    background-repeat: no-repeat;
+    object-fit:cover;
+    height: 360px;
+}
+#fwmovingart {
+    background: url(images/matiger.jpg) left;
+    background-size:cover;
+    background-repeat: no-repeat;
+    object-fit:cover;
+    height: 360px;
+}
+.featured > .secondary {
+    align-self: flex-start;
+}
+.featured > .secondary:hover {
+    margin: 0px 16px 0px 0px;
+}
+/* --- DESKTOP DEFINITION ---*/
+@media only screen and (min-width: 1000px) {
+
+   /* --- MAIN BLOCKS!!!!! ---*/
+    main {
+        margin: 80px 0px;
+        gap: 40px;
+    }
+
+    /* SEE BASIC.CSS FOR DEFINITION */
+    #home:after { 
+            content: ""; 
+            display: block;
+            width: 100%;
+            height: 1px; 
+    /*SETS THE LINE UNDER AS FIXED BECAUSE USER IS ON THIS PAGE */
+            background-color: #826A45;
+    }
+    #home > a {
+        color: #826A45;
+    }
+    
+    .hero {
+        width: fit-content;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 136px;
+    }
+    #landing {
+        padding: 0px 166px;
+    }
+    .content {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        order: -1;
+    }
+    .content > .text {
+        height: fit-content;
+        gap: 24px;
+        align-items: flex-start;
+    }
+    .content > .text > h1 {
+        text-align: left;
+    }
+    .content > .text > h3 {
+        text-align: left;
+    }
+
+    .scrolldown { /* SCROLL DOWN BUTTON */
+        display: block;
+        position: absolute; /* FIXED AT THE BOTTOM */
+        text-align: center;
+        right: 50%; /* CENTRALIZING THE BUTTOM */
+        top: 650px; /* OFFSET FROM THE BOTTOM OF THE SCREEN */
+        opacity: 0.7;
+        transition: all 0.2s ease-out; /* TRANSITION FUNCTION */
+    }
+    .scrolldown:hover { /* TRANSITION TRIGGER */
+        opacity: 0.9;
+        transform: translateY(6px);
+    }
+
+    .blockwhite {
+        flex-direction: row;
+        padding: 80px 166px;
+        gap: 80px;
+        align-items: center;
+    }
+    .blockwhite > .content {
+        order: 1;
+    }
+    .blockwhite > .image {
+        position: relative;
+        top: 120px;
+    }
+    .blockyellow {
+        height: fit-content;
+        padding: 80px 166px;
+        align-items: flex-start;
+        gap: 24px;
+    }
+    .byintro {
+        display: flex;
+        flex-direction: row;
+        gap: 236px;
+        align-self: stretch;
+    }
+    .byintro > .image {
+        order: 1;
+        width: fit-content;
+        max-height: 317px;
+        flex-shrink: 0;
+    }
+    .byintro > .text {
+        justify-self: flex-start;
+    }
+    .competences {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 12px;
+        align-self: stretch;
+    }
+    #workblock {
+        flex-direction: column;
+    }
+    #workblock > h2 {
+        align-self: flex-start;
+    }
+    .featured {
+        width: 100%;
+        gap: 40px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .featured > .secondary {
+        align-self: flex-end;
+    }
+    .card {
+        max-width: 324px;
+    }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- HTML 5. Semantic tags also defines html 5. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Defines the set of characters to be used in the code. UTF-8 is the standard. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Defines the window of which the screen consists. It is set to the device screen to keep it responsive. -->
+
+    <link rel="stylesheet" href="../basic.css">
+    <link rel="stylesheet" href="template.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c80e433044.js" crossorigin="anonymous"></script>
+    <!-- Adding Font Awesome Kit for icons -->
+
+    <title>Toto Designs - Python Game</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../images/Logoblack.png" alt="logo" width="48" height="48"></a>
+
+            <!-- ADDING THE CHECKBOX FUNCTION. DEFINING THE BOX AS "CLICK" -->
+            <input type="checkbox" id="click">
+
+            <!-- ADDING THE BAR ICON. LABEL TAG ASSOCIATES THE MENU BAR WITH THE CHECKBOX FUNCTION. CALLING THE "CLICK"-VALUE FOR USE -->
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars fa-2xl"></i>
+            </label>
+
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../work.html">Work</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <!-- NAVIGATION COPIED FROM INDEX.HTML -->
+        </nav>
+    </header>
+    <main>
+        <!-- CONTENT HERO -->
+        <div class="banner">
+            <!-- BACK BUTTON -->
+            <a href="../work.html" class="backbtn">
+                <i class="fa-solid fa-chevron-left fa-xl" style="color: #463924;"></i>
+                <h3>Go back to Work.</h3>
+            </a>
+            <div class="herocontent">
+                <div class="herointro">
+                    <h1>Python Game.</h1>
+                    <div class="tags">
+                        <div class="tag">
+                            <p class="cap">UX Research</p>
+                        </div>
+                        <div class="tag">
+                            <p class="cap">Copywriting</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="introtext">
+                    <h3>Full project process: <a href="https://proces.totodesigns.com/2023/11/29/project-2-installation-content-creation-workshop/" target="_blank">https://proces.totodesigns.com/2023/11/29/project-2-installation-content-creation-workshop//</a></h3>
+                    <h3>The second project was about designing a digital installation for the museum: Langelandsfortet. The criteria were: to construct a concept that solved a given case that had a digital interactive layer. Then we had to produce an academic report and present our solution to the client along with a poster, a supporting video, and flyer.</h3>
+                    <h3>Our case was to make their exhibitions accessible for those with movement impairments due to the extreme mobile conditions.</h3>
+                    <h3>Academix report: <a href="https://drive.google.com/file/d/1qVbAkjlQ4Hlqkg9EfodCRt9c64OnyPeA/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1qVbAkjlQ4Hlqkg9EfodCRt9c64OnyPeA/view?usp=sharing</a></h3>
+                    <h3>Flyer: <a href="https://drive.google.com/file/d/1788qGq37ZtAY0o28Fn9N-cPFlkJ8v5DH/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1788qGq37ZtAY0o28Fn9N-cPFlkJ8v5DH/view?usp=sharing</a></h3>
+                    <h3>Video: <a href="https://www.youtube.com/watch?v=xkstlzFaIxQ" target="_blank">https://www.youtube.com/watch?v=xkstlzFaIxQ</a></h3>
+                </div>              
+            </div>
+        </div>
+        <!-- MY ROLE -->
+        <div class="role">
+            <h2>My role.</h2>
+            <p>In this project, my role was to create a python game that simulates moving in a bunker with a given floor plan. My role was also to create a supporting video that explained our project and product for the client pitch.</p>
+        </div>
+        <!-- CONTENT BLOCKS -->
+        <div class="subitemblock">
+            <h3>The game.</h3>
+            <p>Dennis and I made another time plan. The whole group was essentially divided into two, so we were kinda on our own for a few days.</p>
+            <p>We had five days to construct the concept and develop the game. The order was as following:</p>
+            <ul>
+                <li>Research, planning, and gathering knowledge</li>
+                <li>Creation of the fundamentals</li>
+                <li>Optimization</li>
+                <li>Extra additions, removings, tweaks, or just back-up time</li>
+            </ul>
+            <div class="frame">
+                <img src="../images/p2gamedraft.png" alt="sketch draft on a floor plan of a bunker" loading="lazy">
+                <p class="cap">Sketching on an original floor plan of a bunker.</p>
+            </div>
+            <p>Using the floor plan given from the museum, we wanted to use this exact illustration.We learned to create walls that were impenetrable. Then we made the player movable, defined the areas of the rooms and added text. It all sounds very simple, and frankly it was. We admittedly used ChatGPT to help us code the fundamental structure and interactions in the code, but making the exact layout as the floor plan was manual.</p>
+            <div class="frame">
+                <img src="../images/p2gamesketch.png" alt="coordinate draft of the bunker" loading="lazy">
+                <p class="cap">Sketching of the floor plan with coordinates.</p>
+            </div>
+            <p>These values are all the pixels and lengths that we needed to make each wall and room. They are built around rectangles, so we needed a start and end x and y value.</p>
+            <p>Afterwards we had to make the code function and interactive. We wanted the rooms to have some sort of trigger, such that when the player collides with the room, then something happens.</p>
+            <p>At first we wanted to make the code so advanced that it could connect to a projector of some sort. But after realizing the amount of work and understanding, we cut down to a manual type of program. So in the end, there were no trigger, only the interface of the rooms lighted up as a way of highlighting that you had entered the room.</p>
+            <p>Thats why we ended up making a set of pictures that could run in loops. That way we could have someone switch pictures each time they went in different rooms to sell the fake interaction.</p>
+            <div class="frame">
+                <img src="../images/p2gamecode.png" alt="programmed floor plan of the bunker in python" loading="lazy">
+                <p class="cap">Programmed floor plan with python.</p>
+            </div>
+        </div>
+        <div class="subitemblock">
+            <h3>The video.</h3>
+            <p>The purpose of the video was to support our exhibition with additional knowledge or some sort of selling ad. It was supposed to run in a loop, so when they visited our exhibition, the video would provide a greater understanding of our concept at whole.</p>
+            <p>We made the video no longer than 40 seconds, because as an advertisement-type video, no customer would stay and watch for that long. So we had a user try out our prototype and we recorded their reaction as our selling point.</p>
+            <p>I edited the video in PremierePro, and Dennis and I worked together to create a storyboard and flow of the video.</p>
+            <a href="https://www.youtube.com/watch?v=xkstlzFaIxQ" target="_blank">https://www.youtube.com/watch?v=xkstlzFaIxQ</a>
+        </div>
+        <div class="subitemblock">
+            <p>Finally, when we pitched in front of Langeland Kommune and our client, Langelandsfortet, we prepared a short 5 min. pitch to sell our concept to them.</p>
+            <p>We focused a lot on highlighting why our concept was optimal as well as necessary for them. My part of the pitch was to inform them of 'why our concept is the right solution to them', so I put a lot of effort in mentioning the amplification of sensations, because we believed that our concept could not compromise on the real thing.</p>
+            <p>And for the manual interaction between the rooms and the pictures (as mentioned in "5.1 The game"), we had Amalie sneak behind the covers and change pictures and Nadialiva to signal whenever they went in different rooms.</p>
+            <p>And miraculously it worked.</p>
+        </div>        
+        <!-- REFLECTION -->
+        <div class="reflection">
+            <h3>Reflections.</h3>
+            <p>The reflection takes the whole project into consideration.</p>
+            <p>See the full project: <a href="https://proces.totodesigns.com/2023/11/29/project-2-installation-content-creation-workshop/" class="hyperlink">https://proces.totodesigns.com/2023/11/29/project-2-installation-content-creation-workshop/</a></p>
+            <p>To start off, I mentioned in the first project that I felt ambitious and motivated because it was a theme that I was interested in. That's why I admittedly disliked this project. Not that it was poorly constructed. I'm truly grateful for the lessons I've learned and the fact that I got to visit Langelandsfortet and produce a solution to their issues, but the case and theme of design was not my cup of tea. But I did end up somewhat liking the process because we implemented programming in our prototype, and that was a great initiative.</p>
+            <p>In terms of me as a group member instead of project leader, I will admit that I instinctively acted as a leader. I believe Nadialiva did a fine job of executing the role, but there were times where I felt that she lost direction and overview of the whole process. That's why I felt the need to step in and take action. She even mentioned, when we were stuck around the midterm pitch, that I should take over the role for the day. I can also openly say that it was the perfect time for me to try out being a group member, because it was a project that I wasn't the most ambitious about. As for the future, I would love to continue being the project leader, because I believe I can move my group to greater heights with my standards.</p>
+            <p>I am proud of the project as a whole and the product that we delivered. But because the group didn't aim very high as a whole, we all felt slacky inbetween work and tasks, and only at the end would we shift gears.</p>
+            <p>I learned a lot, and my understanding of the design process was broadened and deepened. I can see how this project leads me towards a structured project in the future. I also got a greater feeling of the type of group members I'd wish to have on my team because I tend keep my eyes on the people who are most ambitious and set their goals higher than the average. And I'm excited to face the next project.</p>
+        </div>
+        <a href="#"> <!-- BLANK LINK SCROLLS BACK TOP - "#" SETS TARGET ELEMENT TO "NULL" -->
+            <!-- https://html.spec.whatwg.org/multipage/browsing-the-web.html#scroll-to-the-fragment-identifier -->
+            <div class="stt">
+                <i class="fa-solid fa-chevron-up" style="color: #000111;"></i>
+                <p>Back to top</p>
+            </div>
+        </a> 
+    </main>
+    <footer>
+        <div class="seller">
+            <a href="../index.html"><img src="../images/Logowhite.png" alt="logo" width="24" height="24"></a>
+            <section>
+                <h2>Let's work together</h2>
+                <p>Looking to recruit a great partner? I'd love to work with you.</p>
+            </section>
+            <a href="contact.html" class="light">Contact</a>
+        </div>
+        <div class="../connect">
+            <div class="links">
+                <h3>Links.</h3>
+                <div class="footerlinks">
+                    <a href="../index.html">Home</a>
+                    <a href="../work.html">Work</a>
+                    <a href="../about.html">About</a>
+                    <a href="../contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="some">
+                <h3>Find me on:</h3>
+                <div class="somelinks">
+                    <a href="https://www.instagram.com/tonnytn_/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                    <a href="https://www.linkedin.com/in/tonny-nguyen-totodesigns/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    <a href="https://medium.com/@tonny.nguyen" target="_blank"><i class="fa-brands fa-medium fa-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

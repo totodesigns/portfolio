@@ -1,0 +1,160 @@
+.banner {
+    padding: 40px 15px 80px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px; 
+}
+input {
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.84px;
+    color: #645136;
+}
+.field > label {
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.84px;
+    color: #645136;
+    /* IMPORTANT TO TARGET LABEL THROUGH .FIELD BECAUSE NAVIGATION USES LABEL DEFINITIONS! */
+}
+.field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.84px;
+    color: #645136;
+
+    border-radius: 8px;
+    border: 0.5px solid #645136;
+    /* DEFINTION FOR TEXTAREA AS THIS INPUT FIELD IS DIFFERENT FROM THE OTHERS. */
+}
+.boxes {
+    width: 100%;
+    padding: 40px 15px 40px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.box {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 0.5px solid #645136;
+    text-align: left;
+}
+.box > p {
+    color: #645136;
+}
+.two {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+#bigbox {
+    height: 200px;
+}
+
+@media only screen and (min-width: 1000px) {
+    /* SEE BASIC.CSS FOR DEFINITION */
+    #contact:after { 
+        content: ""; 
+        display: block;
+        width: 100%;
+        height: 1px; 
+    /*SETS THE LINE UNDER AS FIXED BECAUSE USER IS ON THIS PAGE */
+        background-color: #826A45;
+    }
+    #contact > a {
+        color: #826A45;
+    }
+    .banner {
+        display: flex;
+        flex-direction: row;
+        padding: 200px 166px;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 0 0;
+        gap: 236px;
+    }
+    .banner > h3 {
+        width: 100%;
+        align-self: flex-end;
+    }
+    .banner > h1 {
+        width: 100%;
+        align-self: flex-start;
+    }
+    input {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.96px;
+        color: #645136;
+    }
+    .field > label {
+        width: 100%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.96px;
+        color: #645136;
+    /* IMPORTANT TO TARGET LABEL THROUGH .FIELD BECAUSE NAVIGATION USES LABEL DEFINITIONS! */
+    }
+    .boxes {
+        padding: 80px 166px;
+        align-items: center;
+    }
+    .two {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .primary {
+        align-self: flex-start;
+    }
+    textarea {
+        width: 100%;
+        padding: 12px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.96px;
+        color: #645136;
+
+        border-radius: 8px;
+        border: 0.5px solid #645136;
+
+        resize: vertical;
+    }
+    /* DEFINTION FOR TEXTAREA AS THIS INPUT FIELD IS DIFFERENT FROM THE OTHERS. */
+
+}

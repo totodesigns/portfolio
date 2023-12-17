@@ -1,0 +1,219 @@
+/* NOTE! I MADE DESKTOP FIRST FOR ALL THE WORK PAGES.
+THE WORKPAGES WERE THE LAST THING I CODED, AND I
+REALIZED IT MADE MUCH MORE SENSE TO ME TO DO IT THIS WAY.
+THEREFORE THE MEDIA QUERY SAYS "(max-width: 1000px)"
+INSTEAD OF "(min-width: 1000px)" UNLIKE ALL THE
+MAIN PAGES... DESKTOP FIRST, THEN MOBILE. */
+
+h3 > a {
+    font-family: Cormorant Garamond;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0.32px;
+    color: #826A45;
+    word-break: break-all;
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+    padding: 160px 166px;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 0 0;
+    gap: 80px;
+}
+.banner > h1 {
+    width: 100%;
+}
+.banner > h3 {
+    width: 100%;
+    align-self: flex-start;
+}
+.backbtn {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.backbtn > h3 {
+    color: #463924;
+}
+.tags {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.tag {
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    background-color: #eaeaea;
+}
+.herocontent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+.herointro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.introtext {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.role {
+    background-color: #f8eee1;
+    padding: 80px 166px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+.role > h2 {
+    width: 324px;
+    color: #463924;
+}
+.role > p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    color: #463924;
+}
+.subitemblock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 278px;
+    align-items: flex-start;
+    gap: 24px;
+}
+.subitemblock > ul > li {
+    color:  #111111;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: 0.96px;
+    margin-left: 24px;
+}
+.introtext > ul > li {
+    color:  #111111;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: 0.96px;
+    margin-left: 24px;
+}
+.frame {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: 12px;
+    padding: 16px 0px 24px 0px;
+}
+.frame > img {
+    width: 80%;
+    border: 0.5px solid black;
+    border-radius: 32px;
+}
+.resize {
+    max-width: 400px;
+}
+#dataimg {
+    width: 40%;
+}
+.subitemblock > a {
+    color: #826A45;
+}
+.reflection {
+    width: 100%;
+    background-color: #f8eee1;
+    padding: 80px 278px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-self: stretch;
+}
+.reflection > h3, .reflection > p {
+    color: #463924;
+}
+.reflection > p > .hyperlink {
+    color: #000;
+    text-decoration: underline;
+}
+
+.stt { /* SCROLL TO TOP BUTTON */
+    position: fixed; /* FIXED AT THE BOTTOM */
+    text-align: center;
+    right: 2rem;
+    bottom: 2rem; /* OFFSET FROM THE SCREEN */
+    width: 4rem;
+    height: 4rem;
+    padding: 5px;
+    background-color: #f8eee1;
+    border-radius: 50%;
+    box-shadow: 0 0.25rem 0.5rem 0 gray;
+    opacity: 0.7;
+    transition: all 0.2s ease; /* TRANSITION FUNCTION */
+}
+.stt:hover { /* TRANSITION TRIGGER */
+    opacity: 0.9;
+    transform: translateY(-6px);
+}
+.stt > p {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        width: 100%;
+    }
+    h3 > a {
+        width: 100%;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.24px;
+        color: #826A45;
+    }
+    .banner {
+        padding: 40px 15px 80px 16px;
+        gap: 40px;
+    }
+    .herocontent {
+        width: 100%;
+    }
+    .introtext {
+        gap: 40px;
+    }
+    .frame > img {
+        border-radius: 32px;
+    }
+    #dataimg {
+        width: 100%;
+    }
+    .role, .reflection {
+        padding: 40px 15px 40px 16px;
+        flex-direction: column;
+    }
+    .subitemblock {
+        padding: 20px 15px 20px 16px;
+        gap: 12px;
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- HTML 5. Semantic tags also defines html 5. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Defines the set of characters to be used in the code. UTF-8 is the standard. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Defines the window of which the screen consists. It is set to the device screen to keep it responsive. -->
+
+    <link rel="stylesheet" href="../basic.css">
+    <link rel="stylesheet" href="template.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c80e433044.js" crossorigin="anonymous"></script>
+    <!-- Adding Font Awesome Kit for icons -->
+
+    <title>Toto Designs - reMarkable</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../images/Logoblack.png" alt="logo" width="48" height="48"></a>
+
+            <!-- ADDING THE CHECKBOX FUNCTION. DEFINING THE BOX AS "CLICK" -->
+            <input type="checkbox" id="click">
+
+            <!-- ADDING THE BAR ICON. LABEL TAG ASSOCIATES THE MENU BAR WITH THE CHECKBOX FUNCTION. CALLING THE "CLICK"-VALUE FOR USE -->
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars fa-2xl"></i>
+            </label>
+
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../work.html">Work</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <!-- NAVIGATION COPIED FROM INDEX.HTML -->
+        </nav>
+    </header>
+    <main>
+        <!-- CONTENT HERO -->
+        <div class="banner">
+            <!-- BACK BUTTON -->
+            <a href="../work.html" class="backbtn">
+                <i class="fa-solid fa-chevron-left fa-xl" style="color: #463924;"></i>
+                <h3>Go back to Work.</h3>
+            </a>
+            <div class="herocontent">
+                <div class="herointro">
+                    <h1>Product Shooting of reMarkable.</h1>
+                    <div class="tags">
+                        <div class="tag">
+                            <p class="cap">Photography</p>
+                        </div>
+                        <div class="tag">
+                            <p class="cap">Concepting</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="introtext">
+                    <h3>In this workshop, I had the great honor of making one of Hokusai’s paintings move. The workshop taught me AfterEffects and the use of keyframes to create animations. Along with Photoshop to cut out pieces from the painting, I put them all together in one final animation by editing the short video in PremierePro.</h3>
+                </div>                
+            </div>
+        </div> 
+        <!-- MY ROLE -->
+        <div class="role">
+            <h2>My role.</h2>
+            <p>I was alone in this work, and I thought out the concept, did the shooting, and edited the pictures.</p>
+        </div>
+        <!-- CONTENT BLOCKS -->
+        <div class="subitemblock">
+            <h3>Concept.</h3>
+            <p>reMarkable markets their product by calling it “The Paper Tablet”. It’s a note-taking tablet, but the technology is so cutting-edge that it feels like you’re writing on paper. I wanted to enhance that concept by shooting pictures using that product slogan.</p>
+            <p>So my shooting concept was placing the reMarkable tablet on top of scattered pieces of paper everywhere, but I quickly came to realize that it was important to highlight the thickness of the tablet, and I wouldn’t be able to do that from a top-view.</p>
+            <p>I then decided to make it stand up. They also write “It’s paper, with magic powers.”, therefore I wanted some pieces of paper to stand up “magically”.</p>
+        </div>
+        <div class="subitemblock">
+            <h3>Shooting</h3>
+            <div class="frame">
+                <img src="../images/remarkable.png" alt="remarkable standing up" class="resize" loading="lazy">
+                <p class="cap">Product picture without paper in the background.</p>
+            </div>
+            <p>I used tape and two colleagues to hold up each piece of paper. Now it looks like they are flying.</p>
+            <p>I placed the reMarkable leaned up against a heavy object and stuck it so it didn’t fall flat down.</p>
+        </div>        
+        <div class="subitemblock">
+            <h3>Editing.</h3>
+            <p>I used Photoshop first to remove the tape from the picture. Since the background was already kind of infinite, I didn’t fix much in Lightroom. I adjusted the shadings a bit, and that was it.</p>
+            <div class="frame">
+                <img src="../images/magicremarkable.jpg" alt="remarkable with floating papers in the background" class="resize" loading="lazy">
+                <p class="cap">Edited product picture with paper in the background.</p>
+            </div>
+        </div>
+
+        <!-- REFLECTION -->
+        <div class="reflection">
+            <h3>Reflections.</h3>
+            <p>I’m happy with the concept, and I believe I have highlighted their product slogan by using their concept and transferring it to photography.</p>
+            <p>The output was a bit too simple for me. I had ideas during the shooting how I wanted it to turn out, and when I was editing, I realized that there wasn’t more to it.</p>
+            <p>I learned a lot about the exposure triangle and how it affects a picture. But for this specific shooting for the reMarkable, I didn’t apply that many changes within the triangle. But!</p>
+            <p>Fun fact: I used the same learnings to take portraits that you see on the front page.</p>
+        </div>
+        <a href="#"> <!-- BLANK LINK SCROLLS BACK TOP - "#" SETS TARGET ELEMENT TO "NULL" -->
+            <!-- https://html.spec.whatwg.org/multipage/browsing-the-web.html#scroll-to-the-fragment-identifier -->
+            <div class="stt">
+                <i class="fa-solid fa-chevron-up" style="color: #000111;"></i>
+                <p>Back to top</p>
+            </div>
+        </a>    
+    </main>
+    <footer>
+        <div class="seller">
+            <a href="../index.html"><img src="../images/Logowhite.png" alt="logo" width="24" height="24"></a>
+            <section>
+                <h2>Let's work together</h2>
+                <p>Looking to recruit a great partner? I'd love to work with you.</p>
+            </section>
+            <a href="../contact.html" class="light">Contact</a>
+        </div>
+        <div class="connect">
+            <div class="links">
+                <h3>Links.</h3>
+                <div class="footerlinks">
+                    <a href="../index.html">Home</a>
+                    <a href="../work.html">Work</a>
+                    <a href="../about.html">About</a>
+                    <a href="../contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="some">
+                <h3>Find me on:</h3>
+                <div class="somelinks">
+                    <a href="https://www.instagram.com/tonnytn_/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                    <a href="https://www.linkedin.com/in/tonny-nguyen-totodesigns/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    <a href="https://medium.com/@tonny.nguyen" target="_blank"><i class="fa-brands fa-medium fa-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

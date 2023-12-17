@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- HTML 5. Semantic tags also defines html 5. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Defines the set of characters to be used in the code. UTF-8 is the standard. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Defines the window of which the screen consists. It is set to the device screen to keep it responsive. -->
+
+    <link rel="stylesheet" href="../basic.css">
+    <link rel="stylesheet" href="template.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c80e433044.js" crossorigin="anonymous"></script>
+    <!-- Adding Font Awesome Kit for icons -->
+
+    <title>Toto Designs - Social Media App Development</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../images/Logoblack.png" alt="logo" width="48" height="48"></a>
+
+            <!-- ADDING THE CHECKBOX FUNCTION. DEFINING THE BOX AS "CLICK" -->
+            <input type="checkbox" id="click">
+
+            <!-- ADDING THE BAR ICON. LABEL TAG ASSOCIATES THE MENU BAR WITH THE CHECKBOX FUNCTION. CALLING THE "CLICK"-VALUE FOR USE -->
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars fa-2xl"></i>
+            </label>
+
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../work.html">Work</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <!-- NAVIGATION COPIED FROM INDEX.HTML -->
+        </nav>
+    </header>
+    <main>
+        <!-- CONTENT HERO -->
+        <div class="banner">
+            <!-- BACK BUTTON -->
+            <a href="../work.html" class="backbtn">
+                <i class="fa-solid fa-chevron-left fa-xl" style="color: #463924;"></i>
+                <h3>Go back to Work.</h3>
+            </a>
+            <div class="herocontent">
+                <div class="herointro">
+                    <h1>Development of Social Media app.</h1>
+                    <div class="tags">
+                        <div class="tag">
+                            <p class="cap">UI Design</p>
+                        </div>
+                        <div class="tag">
+                            <p class="cap">UX Research</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="introtext">
+                    <h3>The prototyping workshop has undoubtedly been one of the most meaningful. experience so far. As someone looking into UI/UX, this workshop greatly confirmed my interests in this field. I felt a driving sensation during production that I have yet felt during previous work.</h3>
+                    <h3>Prototype: <a href="https://xd.adobe.com/view/1af195ee-1bd8-4a6c-a4d2-b85d04db8115-4fa2/?fullscreen" target="_blank">https://xd.adobe.com/view/1af195ee-1bd8-4a6c-a4d2-b85d04db8115-4fa2/?fullscreen</a></h3>
+                </div>              
+            </div>
+        </div>
+        <!-- MY ROLE -->
+        <div class="role">
+            <h2>My role.</h2>
+            <p>My role (along with a few others) was to develop the prototype from a previously defined moodboard and style tile. I directed the project scope.</p>
+        </div>
+        <!-- CONTENT BLOCKS -->
+        <div class="subitemblock">
+            <h3>Lo-fi.</h3>
+            <p>To optimize navigation in our app, we created a low fidelity (lo-fi) version of our product. Before adding design to our product, we have the ability to change the order of content before it is too late or complex to change.</p>
+            <div class="frame">
+                <img src="../images/pwslofi.png" alt="Pages from the lo-fi prototype." loading="lazy">
+                <p class="cap">Pages from the lo-fi prototype.</p>
+            </div>
+            <p>Our first ever lo-fi wireframe is retrospectively very flawed. We came into the development phase with the mindset that our lo-fi can look very unrepetitive, rushed, and unaligned, because "it is not the final product anyway". We learned that it is essential to set up a clean, principled, and interactive lo-fi, because it reflects greatly onto the development of a hi-fi. Once understanding this, the significance of a well-developed lo-fi becomes very clear.</p>
+            <p>So because we rushed our lo-fi, we failed to truly discover the flaws of our navigation, and that is the perfect time to study 'why' the navigation is flawed.</p>
+        </div>
+        <div class="subitemblock">
+            <h3>User testing on lo-fi.</h3>
+            <p>We set up a user test using the method: Concurrent Think Aloud, that asks the test person to navigate through the lo-fi prototype and think everything aloud. Every thought, opinion, and feeling are crucial for the qualitative data that we can use to optimize the navigation.</p>
+            <p>The questions and tasks that the test persons were asked were also suboptimal, because they implicitly made them biased towards an answer that we wanted. Not only were the tasks vague (e.g: "find 'settings'"), but the follow-up questions from our side did not give us a clearer understanding of their thought process. After the test and analyzing the data, I learned the importance of unbiased data, because they might experience something we never thought of.</p>
+        </div>
+        <div class="subitemblock">
+            <h3>Hi-fi.</h3>
+            <p>After optimizing the navigation, we started developing the final prototype. We combined our style tile and lo-fi structure as one, and divided the app pages such that we could all work on one each. Because we all understood the navigation, the style, and the layout, we could use this collaborative technique. This was also beneficial for the type of work, since it can get messy in Adobe XD.</p>
+            <div class="frame">
+                <img src="../images/pwshifi.png" alt="Pages from the hi-fi prototype." loading="lazy">
+                <p class="cap">Pages from the hi-fi prototype.</p>
+            </div>
+            <p>Throughout this process, there were many disagreements during the development regarding the content within the pages. This is a mistake during the lo-fi that we didn't discuss further. We kept changing around the content that differed from the lo-fi, and we ended up completely changing the internal layout. I learned that the lo-fi is not just "a bland and unfinished version", but a step one must take to deepen the understanding of the content, layout, structure, navigation, and much more. The lo-fi is also really important, as you can change all these things while the style has yet been applied.</p>
+            <p>That's why the hi-fi actually shouldn't take that long. Because in the hi-fi development, you don't need to think much about navigation and layout, because all of that should be discussed in the lo-fi.</p>
+        </div>
+        <div class="subitemblock">
+            <h3>User testing on hi-fi.</h3>
+            <p>Since the navigation has been tested already, CTA is not necessary. It will be a waste of time because it would give us no value. That's why we could only test our aesthetic part of the prototype, which calls for a Desirability Test. This test is a quantitative test that asks a lot of people about their aesthetic thoughts on our app. We sent out a form with access to the app, and the results were a diagram of many adjectives that described it.</p>
+            <div class="frame" id="dataimg">
+                <img src="../images/pwsdata.png" alt="Data from survey from the hi-fi." loading="lazy">
+                <p class="cap">Data from survey from the hi-fi.</p>
+            </div>
+            <p>The responses were positive, but we focused mainly on the criticism. For example the fact that our design seemed unprofessional due to the lack of variety in colors. Also the point that it would be inaccessible to people with low vision, because the contrast was too weak, and that the icons were too big. These are all very valuable criticism that we took into consideration. We made the last changes and the app was finished.</p>
+        </div>
+       
+        <!-- REFLECTION -->
+        <div class="reflection">
+            <h3>Reflections.</h3>
+            <p>The reflection takes the whole project into consideration.</p>
+            <p>See the full project: <a href="https://proces.totodesigns.com/2023/10/01/prototyping-workshop/" class="hyperlink">https://proces.totodesigns.com/2023/10/01/prototyping-workshop/</a></p>
+            <p>One important thing I learned was that the planning phase is extremely important. It almost seems like the planning and research phase covers 70-80% of the project. It shouldn't take that long to design (believing that we will be more efficient in the future), because the structure, layout, and style are defined in the phases before hi-fi.Another important lesson was the importance of mutual understanding of the style. We weren't very critical of our style tile and therefore made no changes in the hi-fi. And a mutual understanding of the content within each page is also something to remember in the future.</p>
+            <p>Other than that, as the first app and use of Adobe XD, this was a great learning experience, and we all made something that we were proud of.</p>
+        </div>
+        <a href="#"> <!-- BLANK LINK SCROLLS BACK TOP - "#" SETS TARGET ELEMENT TO "NULL" -->
+            <!-- https://html.spec.whatwg.org/multipage/browsing-the-web.html#scroll-to-the-fragment-identifier -->
+            <div class="stt">
+                <i class="fa-solid fa-chevron-up" style="color: #000111;"></i>
+                <p>Back to top</p>
+            </div>
+        </a> 
+    </main>
+    <footer>
+        <div class="seller">
+            <a href="../index.html"><img src="../images/Logowhite.png" alt="logo" width="24" height="24"></a>
+            <section>
+                <h2>Let's work together</h2>
+                <p>Looking to recruit a great partner? I'd love to work with you.</p>
+            </section>
+            <a href="../contact.html" class="light">Contact</a>
+        </div>
+        <div class="connect">
+            <div class="links">
+                <h3>Links.</h3>
+                <div class="footerlinks">
+                    <a href="../index.html">Home</a>
+                    <a href="../work.html">Work</a>
+                    <a href="../about.html">About</a>
+                    <a href="../contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="some">
+                <h3>Find me on:</h3>
+                <div class="somelinks">
+                    <a href="https://www.instagram.com/tonnytn_/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                    <a href="https://www.linkedin.com/in/tonny-nguyen-totodesigns/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    <a href="https://medium.com/@tonny.nguyen" target="_blank"><i class="fa-brands fa-medium fa-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

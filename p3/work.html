@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- HTML 5. Semantic tags also defines html 5. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Defines the set of characters to be used in the code. UTF-8 is the standard. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Defines the window of which the screen consists. It is set to the device screen to keep it responsive. -->
+
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="work.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c80e433044.js" crossorigin="anonymous"></script>
+    <!-- Adding Font Awesome Kit for icons -->
+
+    <title>Toto Designs - Work</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/Logoblack.png" alt="logo" width="48" height="48" loading="lazy"></a>
+
+            <!-- ADDING THE CHECKBOX FUNCTION. DEFINING THE BOX AS "CLICK" -->
+            <input type="checkbox" id="click">
+
+            <!-- ADDING THE BAR ICON. LABEL TAG ASSOCIATES THE MENU BAR WITH THE CHECKBOX FUNCTION. CALLING THE "CLICK"-VALUE FOR USE -->
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars fa-2xl"></i>
+            </label>
+
+            <ul>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="work"><a href="work.html">Work</a></li>
+                <li id="about"><a href="about.html">About</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- NAVIGATION COPIED FROM INDEX.HTML -->
+        </nav>
+    </header>
+    <main>
+        <div class="banner">                     
+            <h1>I work with and for people.</h1>
+            <h3>I write and design for a few important purposes: 
+                to help you engage with your people, and build a 
+                lasting and sustainable brand to serve them with.</h3>
+        </div>
+        <div class="blockwhite" id="workblock">
+            <h2>All projects:</h2>
+            <div class="cards"> 
+                <div class="card"> <!-- REMARKABLE CARD -->
+                    <div class="zoom">
+                        <a href="workpages/remarkable.html"><img src="images/remarkable.png" alt="remarkable card cover" loading="lazy"></a>
+                    </div>
+                    <div class="tags">
+                        <div class="tag">
+                            <p class="cap">Photography</p>
+                        </div>
+                        <div class="tag">
+                            <p class="cap">Branding</p>
+                        </div>
+                    </div>
+                    <a href="workpages/remarkable.html" class="secondary">
+                        Product Shooting of reMarkable
+                        <i class="fa-solid fa-arrow-right" style="color: #424242;"></i>
+                    </a>
+                </div>
+                <div class="card"> <!-- PYTHON GAME CARD -->
+                    <div class="zoom">
+                        <a href="workpages/python.html"><img src="images/p2gamecode.png" alt="python maze game card cover" loading="lazy"></a>
+                    </div>
+                    <div class="tags">
+                        <div class="tag">
+                            <p class="cap">Programming</p>
+                        </div>
+                        <div class="tag">
+                            <p class="cap">Concepting</p>
+                        </div>
+                    </div>
+                    <a href="workpages/python.html" class="secondary">
+                        Python Game
+                        <i class="fa-solid fa-arrow-right" style="color: #424242;"></i>
+                    </a>
+                </div>
+                <div class="card"> <!-- MCD COPY CARD -->
+                    <div class="zoom">
+                        <a href="workpages/mcd.html"><img src="images/mcdlogo.jpg" alt="mcdonalds logo card cover" loading="lazy"></a>
+                    </div>
+                    <div class="tags">
+                        <div class="tag">
+                            <p class="cap">Copywriting</p>
+                        </div>
+                    </div>
+                    <a href="workpages/mcd.html" class="secondary">
+                        Copywriting for McDonald's
+                        <i class="fa-solid fa-arrow-right" style="color: #424242;"></i>
+                    </a>
+                </div>
+                <div class="card"> <!-- SO ME APP CARD -->
+                    <div class="zoom">
+                        <a href="workpages/someapp.html"><img src="images/pwsintro.jpg" alt="pages of social media app card cover" loading="lazy"></a>
+                    </div>
+                    <div class="tags">
+                        <div class="tag">
+                            <p class="cap">UI Design</p>
+                        </div>
+                        <div class="tag">
+                            <p class="cap">UX Research</p>
+                        </div>
+                    </div>
+                    <a href="workpages/someapp.html" class="secondary">
+                        Development of Social Media app
+                        <i class="fa-solid fa-arrow-right" style="color: #424242;"></i>
+                    </a>
+                </div>
+                <div class="card"> <!-- MOVING ARTS CARD -->
+                    <div class="zoom">
+                        <a href="workpages/movingart.html"><img src="images/matiger.jpg" alt="tiger in the snow by hokusai card cover" loading="lazy"></a>
+                    </div>
+                    <div class="tags">
+                        <div class="tag">
+                            <p class="cap">Adobe</p>
+                        </div>
+                        <div class="tag">
+                            <p class="cap">Concepting</p>
+                        </div>
+                    </div>
+                    <a href="workpages/movingart.html" class="secondary">
+                        Moving Art
+                        <i class="fa-solid fa-arrow-right" style="color: #424242;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial">
+            <h2>“He was ready to deliver high quality copywriting, and he was always quick 
+                to come up with new ideas that would increase our digital marketing.”</h2>
+            <p>Will Smith, CEO of Alibaba</p>
+        </div>
+    </main>
+    <footer>
+        <div class="seller">
+            <a href="index.html"><img src="images/Logowhite.png" alt="logo" width="24" height="24" loading="lazy"></a>
+            <section>
+                <h2>Let's work together</h2>
+                <p>Looking to recruit a great partner? I'd love to work with you.</p>
+            </section>
+            <a href="contact.html" class="light">Contact</a>
+        </div>
+        <div class="connect">
+            <div class="links">
+                <h3>Links.</h3>
+                <div class="footerlinks">
+                    <a href="index.html">Home</a>
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="some">
+                <h3>Find me on:</h3>
+                <div class="somelinks">
+                    <a href="https://www.instagram.com/tonnytn_/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                    <a href="https://www.linkedin.com/in/tonny-nguyen-totodesigns/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    <a href="https://medium.com/@tonny.nguyen" target="_blank"><i class="fa-brands fa-medium fa-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

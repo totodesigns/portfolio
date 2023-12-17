@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- HTML 5. Semantic tags also defines html 5. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Defines the set of characters to be used in the code. UTF-8 is the standard. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Defines the window of which the screen consists. It is set to the device screen to keep it responsive. -->
+
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c80e433044.js" crossorigin="anonymous"></script>
+    <!-- Adding Font Awesome Kit for icons -->
+
+    <title>Toto Designs - Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/Logoblack.png" alt="logo" width="48" height="48" loading="lazy"></a>
+
+            <!-- ADDING THE CHECKBOX FUNCTION. DEFINING THE BOX AS "CLICK" -->
+            <input type="checkbox" id="click">
+
+            <!-- ADDING THE BAR ICON. LABEL TAG ASSOCIATES THE MENU BAR WITH THE CHECKBOX FUNCTION. CALLING THE "CLICK"-VALUE FOR USE -->
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars fa-2xl"></i>
+            </label>
+
+            <ul>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="work"><a href="work.html">Work</a></li>
+                <li id="about"><a href="about.html">About</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- THE WHOLE NAVIGATION BAR CAN NOW BE COPIED TO OTHER SITES - FUNCTIONALITY IS IN THE BASIC.CSS-->
+        </nav>
+    </header>
+    <main>
+        <div class="hero" id="landing">
+            <img class="image" src="images/portrait.png" loading="lazy" alt="portrait of bald asian man">      
+            <div class="content">           
+                <section class="text">
+                    <h1>Hi. I'm Tonny.</h1>
+                    <h3>I’m a sharp writer, and I will elevate your copywriting to greater heights.
+                            Let’s turn your words into a selling message.</h3>
+                </section>  
+                <a href="work.html" class="primary">Explore my work</a>
+            </div>
+
+            <a href="#scrollanchor"> <!-- SCROLLS DOWN TO THE ANCHOR ID -->
+                <!-- https://html.spec.whatwg.org/multipage/browsing-the-web.html#scroll-to-the-fragment-identifier -->
+                <div class="scrolldown">
+                    <i class="fa-solid fa-chevron-down fa-2xl" style="color: #645136;"></i>
+                </div>
+            </a>
+
+        </div>
+        <div class="blockwhite" id="scrollanchor"> <!-- ANCHOR POINT FOR SCROLL BUTTON -->
+            <img class="image" src="images/philosophical.png" loading="lazy" alt="bald asian man looking philosophical">
+            <div class="content">
+                <section class="text">
+                    <h2>My readers must hear my words.</h2>
+                    <p>I aim to write unique and compelling copy in tune with user-centered
+                        design that bring words to life. That's my work philosophy.</p>
+                </section>
+                <a href="about.html" class="secondary">
+                    Read about my work philosophies
+                    <i class="fa-solid fa-arrow-right" style="color: #424242;"></i>
+                </a>
+            </div>
+        </div>
+        <div class="blockyellow">
+            <div class="byintro">
+                <img class="image" src="images/remarkable.png" loading="lazy" alt="remarkable standing up">
+                <section class="text">
+                    <h3>Copywriting and Design are the two core fundamentals of making people take action.</h3>
+                    <p>I synergize the two pillars of modern marketing to
+                        create beautiful balance and harmoney for growing
+                        companies. This is how I do it: </p>
+                </section>
+            </div>
+            <section class="competences">
+                <div class="text">
+                    <h3>Copywriting.</h3>
+                    <p>My writing expertise ensures people never read the 
+                        same sentence twice and take action immediately.</p>
+                </div>
+                <div class="text">
+                    <h3>Research.</h3>
+                    <p>My copies and designs are always backed up 
+                        by well-defined and advanced research and data.</p>
+                </div>
+                <div class="text">
+                    <h3>Design.</h3>
+                    <p>My user-centered designs captivates a variety of target 
+                        groups that optimizes accessibility and sustainability.</p>
+                </div>
+            </section>
+        </div>
+        <div class="blockwhite" id="workblock">
+            <h2>My work has a lasting impact.</h2>
+            <div class="featured">
+                <h3>Featured work:</h3>
+                <div class="cards">
+ 
+                    <div class="card">
+                        <!-- WRAP IN A ZOOM CONTAINER!-->
+                        <div class="zoom">
+                            <a href="workpages/remarkable.html"><img src="images/remarkable.png" alt="remarkable card cover"  loading="lazy"></a>
+                        </div>
+                        <h3>Development of Social Media App</h3>
+                    </div>
+                    <div class="card">
+                        <div class="zoom">
+                            <a href="workpages/someapp.html"><img src="images/pwsintro.jpg" alt="pages of social media card cover" loading="lazy"></a>
+                        </div>
+                        <h3>Development of Social Media App</h3>
+                    </div>
+                    <div class="card">
+                        <div class="zoom">
+                            <a href="workpages/movingart.html"><img src="images/matiger.jpg" alt="tiger in the snow by hokusai card cover" loading="lazy"></a>
+                        </div>
+                        <h3>Moving Art</h3>
+                    </div>
+                </div>
+                <a href="work.html" class="secondary">
+                    Explore my work
+                    <i class="fa-solid fa-arrow-right" style="color: #424242;"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="seller">
+            <a href="index.html"><img src="images/Logowhite.png" alt="logo" width="24" height="24" loading="lazy"></a>
+            <section>
+                <h2>Let's work together</h2>
+                <p>Looking to recruit a great partner? I'd love to work with you.</p>
+            </section>
+            <a href="contact.html" class="light">Contact</a>
+        </div>
+        <div class="connect">
+            <div class="links">
+                <h3>Links.</h3>
+                <div class="footerlinks">
+                    <a href="index.html">Home</a>
+                    <a href="work.html">Work</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="some">
+                <h3>Find me on:</h3>
+                <div class="somelinks">
+                    <a href="https://www.instagram.com/tonnytn_/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                    <a href="https://www.linkedin.com/in/tonny-nguyen-totodesigns/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    <a href="https://medium.com/@tonny.nguyen" target="_blank"><i class="fa-brands fa-medium fa-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
